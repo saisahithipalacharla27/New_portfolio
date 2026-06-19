@@ -1,5 +1,5 @@
 import { certificates } from "../../data/certificates";
-import CertificateCard from "../cards/CertificateCard";
+import CertificateCard from "../cards/certificatecard";
 
 export default function Certifications() {
   return (
