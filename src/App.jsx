@@ -9,9 +9,9 @@ import Certifications from "./components/sections/Certifications";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/layout/Footer";
 
-function App() {
+export default function App() {
   return (
-    <div className="bg-slate-50 text-slate-900 pt-20">
+    <div className="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white pt-20 transition-colors duration-300">
       <Navbar />
       <Hero />
       <About />
@@ -25,5 +25,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

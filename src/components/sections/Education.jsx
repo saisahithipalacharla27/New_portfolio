@@ -1,65 +1,103 @@
+import { FaGraduationCap, FaUniversity, FaCalendarAlt, FaAward } from "react-icons/fa";
 import { education } from "../../data/education";
 
 export default function Education() {
   return (
     <section
       id="education"
-      className="min-h-screen flex items-center bg-white py-20"
+      className="py-24 bg-white dark:bg-slate-900 transition-colors duration-300"
     >
-      <div className="max-w-7xl mx-auto px-6 w-full">
+      <div className="max-w-6xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
 
-          <h2 className="text-5xl md:text-6xl font-bold">
+          <p className="uppercase tracking-widest text-blue-600 text-sm font-semibold">
+            EDUCATION
+          </p>
+
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mt-3">
             My <span className="text-blue-600">Education</span>
           </h2>
 
-          <p className="text-gray-500 mt-4 text-lg">
-            My academic journey that built my foundation in data analytics and technology.
+          <p className="mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-300">
+            My academic journey that built the analytical and technical foundation for my career in data analytics.
           </p>
 
         </div>
 
-        {/* Timeline */}
-        <div className="max-w-4xl mx-auto">
+        <div className="space-y-8">
 
-          {education.map((item, index) => (
+          {education.map((item) => (
 
             <div
-              key={index}
-              className="flex gap-8 mb-14"
+              key={item.id}
+              className="bg-slate-50 dark:bg-slate-800 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 p-8 hover:shadow-xl transition-all duration-300"
             >
 
-              {/* Timeline */}
-              <div className="flex flex-col items-center">
+              {/* Degree */}
+              <div className="flex items-center gap-3 mb-8">
 
-                <div className="w-5 h-5 rounded-full bg-blue-600 border-4 border-blue-100"></div>
+                <div className="bg-blue-600 text-white p-3 rounded-full">
+                  <FaGraduationCap />
+                </div>
 
-                {index !== education.length - 1 && (
-                  <div className="w-1 h-28 bg-blue-200"></div>
-                )}
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
+                    {item.degree}
+                  </h3>
+
+                  <p className="text-blue-600 dark:text-blue-400 font-medium">
+                    {item.specialization}
+                  </p>
+                </div>
 
               </div>
 
-              {/* Education Card */}
-              <div className="bg-slate-50 rounded-2xl shadow-md p-6 flex-1 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              {/* Details */}
+              <div className="grid md:grid-cols-3 gap-6">
 
-                <h3 className="text-2xl font-bold text-gray-800">
-                  {item.degree}
-                </h3>
+                {/* Institution */}
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <FaUniversity className="text-blue-600" />
+                    <h4 className="font-bold text-slate-900 dark:text-white">
+                      Institution
+                    </h4>
+                  </div>
 
-                <p className="text-lg text-gray-600 mt-2">
-                  {item.institute}
-                </p>
+                  <p className="text-slate-600 dark:text-slate-300">
+                    {item.institute}
+                  </p>
+                </div>
 
-                <p className="text-blue-600 font-semibold mt-3">
-                  {item.year}
-                </p>
+                {/* Duration */}
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <FaCalendarAlt className="text-blue-600" />
+                    <h4 className="font-bold text-slate-900 dark:text-white">
+                      Duration
+                    </h4>
+                  </div>
 
-                <p className="text-gray-500 mt-1">
-                  {item.score}
-                </p>
+                  <p className="text-slate-600 dark:text-slate-300">
+                    {item.duration}
+                  </p>
+                </div>
+
+                {/* Score */}
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <FaAward className="text-blue-600" />
+                    <h4 className="font-bold text-slate-900 dark:text-white">
+                      Score
+                    </h4>
+                  </div>
+
+                  <p className="text-slate-600 dark:text-slate-300">
+                    {item.score}
+                  </p>
+                </div>
 
               </div>
 

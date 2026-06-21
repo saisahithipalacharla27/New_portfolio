@@ -11,21 +11,21 @@ export const experience = [
       "Tableau",
       "SQL",
       "Data Analytics",
-      "Business Intelligence"
+      "Business Intelligence",
     ],
 
     achievements: [
-      "Performed data cleansing, validation and transformation to ensure data accuracy and consistency.",
-      "Designed interactive KPI dashboards to support business performance monitoring.",
-      "Conducted Exploratory Data Analysis (EDA) to identify trends, anomalies and actionable insights.",
-      "Delivered data-driven recommendations using visualization and business intelligence techniques."
-    ]
+      "Performed data cleaning, validation, and transformation to ensure data accuracy.",
+      "Built interactive KPI dashboards using Tableau and Power BI.",
+      "Conducted exploratory data analysis (EDA) to identify trends and insights.",
+      "Generated data-driven business recommendations using visualization tools.",
+    ],
   },
 
   {
     id: 2,
     role: "Data Analyst",
-    companyName: "PricewaterhouseCoopers",
+    companyName: "PricewaterhouseCoopers (PwC)",
     duration: "Aug 2023 – Aug 2025",
     employmentType: "Full-time",
 
@@ -34,17 +34,15 @@ export const experience = [
       "SQL",
       "Pandas",
       "Matplotlib",
-      "Excel"
+      "Excel",
+      "Power BI",
     ],
 
     achievements: [
-      "Designed and maintained interactive Power BI and Tableau dashboards to track KPIs, improve business reporting visibility, and support data-driven decision-making.",
-
-      "Wrote and optimized complex SQL queries to extract, clean, and analyze datasets containing 3,000+ records, reducing report generation time by 25% through query optimization.",
-
-      "Developed automated reporting solutions using Power BI, DAX, Power Query, and ETL workflows, improving reporting consistency, operational efficiency, and data accuracy.",
-
-      "Collaborated with cross-functional stakeholders to gather business requirements, perform data validation and transformation, and deliver actionable analytical insights while maintaining data governance standards."
-    ]
-  }
+      "Created interactive dashboards in Power BI and Tableau to track KPIs and business performance.",
+      "Wrote optimized SQL queries to analyze large datasets and improve reporting efficiency.",
+      "Automated reporting workflows using Power BI, DAX, and Power Query.",
+      "Collaborated with stakeholders to deliver actionable insights and improve decision-making.",
+    ],
+  },
 ];
